@@ -320,7 +320,6 @@
                             container: this.element
                         });
                     }
-                    console.log(this.datesEnabled);
                     
 		},
 
@@ -450,11 +449,11 @@
 
                                     var dateTitle = '';
                                     if(this.datesEnabled[thisDate]){
-                                        clsName = this.datesEnabled[thisDate].clsName;
+                                        clsName += ' '+this.datesEnabled[thisDate].clsName;
                                         dateTitle = this.datesEnabled[thisDate].tooltipText;
                                     }
                                     else{
-                                        clsName = ' disabled';
+                                        clsName += ' disabled';
                                         dateTitle = null;
                                     }
                                 }
